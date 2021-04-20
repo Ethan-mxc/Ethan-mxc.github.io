@@ -6,15 +6,15 @@
   
   <title>hexo 搭建随笔 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="hexo博客搭建环境准备 node.js安装（自行官网）    git安装（自行官网）     检测node和git是否安装成功 12node -v  git --version  npm换成cnpm国内镜像，解决npm速度慢，用法同npm一样 1$ sudo npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.ta">
+  <meta name="description" content="hexo博客搭建环境准备 node.js安装（自行官网）    git安装（自行官网）     检测node和git是否安装成功 123456789node -v  git --version&#96;&#96;&#96;  ### npm换成cnpm#### 国内镜像，解决npm速度慢，用法同npm一样-  $ sudo npm install -g cnpm –registry&#x3D;https:&#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo 搭建随笔">
 <meta property="og:url" content="http://example.com/2021/04/20/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="hexo博客搭建环境准备 node.js安装（自行官网）    git安装（自行官网）     检测node和git是否安装成功 12node -v  git --version  npm换成cnpm国内镜像，解决npm速度慢，用法同npm一样 1$ sudo npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.ta">
+<meta property="og:description" content="hexo博客搭建环境准备 node.js安装（自行官网）    git安装（自行官网）     检测node和git是否安装成功 123456789node -v  git --version&#96;&#96;&#96;  ### npm换成cnpm#### 国内镜像，解决npm速度慢，用法同npm一样-  $ sudo npm install -g cnpm –registry&#x3D;https:&#x2F;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-04-20T09:59:29.256Z">
-<meta property="article:modified_time" content="2021-04-20T13:20:53.684Z">
+<meta property="article:modified_time" content="2021-04-20T13:24:39.881Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -102,55 +102,12 @@
 </li>
 </ul>
 <h3 id="检测node和git是否安装成功"><a href="#检测node和git是否安装成功" class="headerlink" title="检测node和git是否安装成功"></a>检测node和git是否安装成功</h3><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v  </span><br><span class="line">git --version</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="npm换成cnpm"><a href="#npm换成cnpm" class="headerlink" title="npm换成cnpm"></a>npm换成cnpm</h3><h4 id="国内镜像，解决npm速度慢，用法同npm一样"><a href="#国内镜像，解决npm速度慢，用法同npm一样" class="headerlink" title="国内镜像，解决npm速度慢，用法同npm一样"></a>国内镜像，解决npm速度慢，用法同npm一样</h4><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="检测是否安装成功"><a href="#检测是否安装成功" class="headerlink" title="检测是否安装成功"></a>检测是否安装成功</h3><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="验证是否安装成功"><a href="#验证是否安装成功" class="headerlink" title="验证是否安装成功"></a>验证是否安装成功</h3><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a>启动项目</h3><ul>
-<li>建议在新建文件夹中初始化项目<ul>
-<li><code>sudo hexo init </code></li>
-</ul>
-</li>
-<li>启动博客<ul>
-<li><code>hexo s</code></li>
-</ul>
-</li>
-<li>新建文章<ul>
-<li><code>hexo n &quot;文章名称&quot;</code></li>
-</ul>
-</li>
-<li>清理生成的静态文件<ul>
-<li><code>hexo clean</code></li>
-</ul>
-</li>
-<li>生产静态文件<ul>
-<li><code>hexo g</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="免费借助Github部署公网访问"><a href="#免费借助Github部署公网访问" class="headerlink" title="免费借助Github部署公网访问"></a>免费借助Github部署公网访问</h2><hr>
-<h3 id="新建GitHub仓库"><a href="#新建GitHub仓库" class="headerlink" title="新建GitHub仓库"></a>新建GitHub仓库</h3><ul>
-<li>仓库昵称必须是 你的github的昵称.github.io</li>
-</ul>
-<h3 id="本地安装git远程部署插件"><a href="#本地安装git远程部署插件" class="headerlink" title="本地安装git远程部署插件"></a>本地安装git远程部署插件</h3><ul>
-<li><code>sudo cnpm install --save hexo-deployer-git</code></li>
-</ul>
-<h3 id="修改config-yml配置文件"><a href="#修改config-yml配置文件" class="headerlink" title="修改config.yml配置文件"></a>修改config.yml配置文件</h3><ul>
-<li> 文件地步找到deployment字段</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Deployment</span><br><span class="line">deploy：</span><br><span class="line">    type: git</span><br><span class="line">    repo: https:&#x2F;&#x2F;github.com&#x2F;你的github名字&#x2F;你的GitHub名字.github.io.git</span><br><span class="line">    branch: master</span><br></pre></td></tr></table></figure>
-<ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">node -v  </span><br><span class="line">git --version</span><br><span class="line">&#96;&#96;&#96;  </span><br><span class="line"></span><br><span class="line">### npm换成cnpm</span><br><span class="line"></span><br><span class="line">#### 国内镜像，解决npm速度慢，用法同npm一样</span><br><span class="line"></span><br><span class="line">- </span><br></pre></td></tr></table></figure>
+$ sudo npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 检测是否安装成功</span><br><span class="line"></span><br><span class="line">- </span><br></pre></td></tr></table></figure>
+cnpm -v<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 安装hexo</span><br><span class="line"></span><br><span class="line">- </span><br></pre></td></tr></table></figure>
+sudo cnpm install -g hexo-cli<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 验证是否安装成功</span><br><span class="line"></span><br><span class="line">- </span><br></pre></td></tr></table></figure>
+hexo -v<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 启动项目</span><br><span class="line"> - 建议在新建文件夹中初始化项目</span><br><span class="line">   - &#96;&#96;&#96;sudo hexo init &#96;&#96;&#96;</span><br><span class="line"> - 启动博客</span><br><span class="line">   - &#96;&#96;&#96;hexo s&#96;&#96;&#96;</span><br><span class="line"> - 新建文章</span><br><span class="line">   - &#96;&#96;&#96;hexo n &quot;文章名称&quot;&#96;&#96;&#96;</span><br><span class="line"> - 清理生成的静态文件</span><br><span class="line">   - &#96;&#96;&#96;hexo clean&#96;&#96;&#96;</span><br><span class="line"> - 生产静态文件</span><br><span class="line">   - &#96;&#96;&#96;hexo g&#96;&#96;&#96;</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line">## 免费借助Github部署公网访问</span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">### 新建GitHub仓库</span><br><span class="line"></span><br><span class="line">- 仓库昵称必须是 你的github的昵称.github.io</span><br><span class="line"></span><br><span class="line">### 本地安装git远程部署插件</span><br><span class="line"></span><br><span class="line">- &#96;&#96;&#96;sudo cnpm install --save hexo-deployer-git&#96;&#96;&#96;</span><br><span class="line"></span><br><span class="line">### 修改config.yml配置文件</span><br><span class="line"></span><br><span class="line">-  文件地步找到deployment字段</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+Deployment<br>deploy：<br>  type: git<br>  repo: <a target="_blank" rel="noopener" href="https://github.com/%E4%BD%A0%E7%9A%84github%E5%90%8D%E5%AD%97/%E4%BD%A0%E7%9A%84GitHub%E5%90%8D%E5%AD%97.github.io.git">https://github.com/你的github名字/你的GitHub名字.github.io.git</a><br>  branch: master<br>```  </li>
 <li>注意type;repo;branch所有冒号后加上空格</li>
 </ul>
 <h3 id="部署至GitHub"><a href="#部署至GitHub" class="headerlink" title="部署至GitHub"></a>部署至GitHub</h3><ul>
@@ -180,7 +137,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/04/20/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="cknq22aa50000lzr4htddgle1" data-title="hexo 搭建随笔" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/04/20/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="cknq276lp0000nwr47humhggj" data-title="hexo 搭建随笔" class="article-share-link">Share</a>
       
       
       
